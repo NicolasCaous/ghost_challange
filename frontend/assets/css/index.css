@@ -1,0 +1,83 @@
+@font-face {
+  font-family: ghc-default;
+  src: url(../font/inter.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+.ghc-comments-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+
+  font-family: ghc-default;
+  font-style: normal;
+}
+
+.ghc-comments-title {
+}
+
+.ghc-comments-title h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.ghc-comments-new-comment-container {
+  display: grid;
+  grid-template-columns: 30px auto 80px;
+  grid-template-rows: auto;
+
+  margin-top: 30px;
+}
+
+.ghc-comments-new-comment-container .profile-pic-container {
+  height: 30px;
+  width: 30px;
+}
+
+.ghc-comments-new-comment-container .profile-pic-container img {
+  height: 30px;
+  width: 30px;
+}
+
+.ghc-comments-new-comment-container input {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #8a8f9c;
+  margin: 0px 12px;
+  padding: 0px 10px;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.ghc-comments-new-comment-container button {
+  transition: background-color 0.1s ease;
+  background: #7e34f7;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.ghc-comments-new-comment-container button:hover,
+.ghc-comments-new-comment-container button:focus {
+  background: #955eee;
+}
+
+.ghc-comments-new-comment-container button:focus {
+  border: 2px solid #000000;
+}
+
+.ghc-comments-new-comment-container button:active {
+  background: #a17bde;
+}
+
+.ghc-comments-divider {
+  margin-top: 44px;
+  border-bottom: 1px solid #e5e5e5;
+}
