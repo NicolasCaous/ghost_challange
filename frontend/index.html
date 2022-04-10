@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
@@ -9,13 +10,44 @@
       </div>
       <div class="ghc-comments-new-comment-container">
         <div class="profile-pic-container">
-          <img src="assets/img/profile-pic-1.png"/>
+          <img src="assets/img/profile-pic-1.png" />
         </div>
         <input type="text" placeholder="What are your thoughts?" />
         <button type="button">Comment</button>
       </div>
       <div class="ghc-comments-divider"></div>
-      <div class="ghc-comments-history"></div>
+      <div class="ghc-comments-history">
+        <template>
+          <div class="ghc-comment-container">
+            <div class="ghc-comment-image-container">
+              <img />
+            </div>
+            <div class="ghc-comment-content-container">
+              <div class="ghc-comment-title-row-container">
+                <div class="ghc-comment-author"></div>
+                <div class="ghc-comment-timestamp"></div>
+              </div>
+              <div class="ghc-comment-text-row-container"></div>
+              <div class="ghc-comment-buttons-row-container">
+                <button
+                  type="button"
+                  class="ghc-comment-button ghc-comment-button-upvote"
+                >
+                  <div class="ghc-comment-button-upvote-symbol">▲</div>
+                  <div class="ghc-comment-button-upvote-text">Upvote</div>
+                  <div class="ghc-comment-button-upvote-count"></div>
+                </button>
+                <button
+                  type="button"
+                  class="ghc-comment-button ghc-comment-button-reply"
+                >
+                  Reply
+                </button>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
     </div>
     <script src="assets/js/sdk.js"></script>
     <script src="assets/js/index.js"></script>
